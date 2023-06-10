@@ -1,0 +1,145 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* overlay-1 part start here */
+.bottom_overlay-1{
+    position:relative;
+    overflow:hidden;
+    width:440px;
+}
+.bottom_overlay-1 img{
+    max-width:100%;
+    height:auto;
+}
+.overlay-1{
+    width:440px;
+    background-color:rgba(0, 255, 255, 0.377);
+    height:100%;
+    position:absolute;
+    bottom:100%;
+    right:0;
+    left:0;
+    transition:bottom .4s linear;
+}
+h6{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.bottom_overlay-1:hover .overlay-1{
+    bottom:0;
+    cursor:pointer;
+}
+/* overlay-1 part end here */
+
+
+/* overlay-2 part start here */
+.bottom_overlay-2{
+    position:relative;
+    overflow:hidden;
+    width:440px;
+}
+.bottom_overlay- img{
+    max-width:100%;
+    height:auto;
+}
+.overlay-2{
+    width:440px;
+    background-color:rgba(0, 255, 255, 0.377);
+    height:100%;
+    position:absolute;
+    top:100%;
+    right:0;
+    left:0;
+    transition:top .4s linear;
+}
+h6{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.bottom_overlay-2:hover .overlay-2{
+    top:0;
+    cursor:pointer;
+}
+/* overlay-2 part end here */
+
+
+
+/* overlay-3 part start here */
+.bottom_overlay-3{
+    position:relative;
+    overflow:hidden;
+    width:440px;
+}
+.bottom_overlay- img{
+    max-width:100%;
+    height:auto;
+}
+.overlay-3{
+    width:440px;
+    background-color:rgba(0, 255, 255, 0.377);
+    height:100%;
+    position:absolute;
+    bottom:0;
+    right:100%;
+    top:0;
+    transition:right .4s linear;
+}
+h6{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.bottom_overlay-3:hover .overlay-3{
+    right:0;
+    cursor:pointer;
+}
+/* overlay-3 part end here */
+
+
+
+/* overlay-4 part start here */
+.bottom_overlay-4{
+    position:relative;
+    overflow:hidden;
+    width:440px;
+}
+.bottom_overlay-4 img{
+    max-width:100%;
+    height:auto;
+}
+.overlay-4{
+    width:440px;
+    background-color:rgba(0, 255, 255, 0.377);
+    height:100%;
+    position:absolute;
+    bottom:0;
+    left:100%;
+    top:0;
+    transition:left .4s linear;
+}
+h6{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.bottom_overlay-4:hover .overlay-4{
+    left:0;
+    cursor:pointer;
+}
+/* overlay-4 part end here */
+
+.bottom_overlay img{
+    filter:saturate(0);
+    transition:all .2s linear;
+}
+.bottom_overlay:hover img{
+    filter:saturate(1);
+    cursor: pointer;
+}
