@@ -135,11 +135,105 @@ h6{
 }
 /* overlay-4 part end here */
 
-.bottom_overlay img{
+
+/* overlay-5 part start here */
+
+.bottom_overlay-5 img{
     filter:saturate(0);
     transition:all .2s linear;
 }
-.bottom_overlay:hover img{
+.bottom_overlay-5:hover img{
     filter:saturate(1);
     cursor: pointer;
 }
+
+
+/* overlay-5 part end here */
+
+
+/* overlay-6 part start here */
+
+.bottom_overlay-6{
+    position:relative;
+    overflow:hidden;
+    width:440px;
+}
+.bottom_overlay-6 img{
+    max-width:100%;
+    height:auto;
+}
+.overlay-6{
+    width:440px;
+    background-color:rgba(128, 128, 128, 0.37);
+    height:100%;
+    position:absolute;
+    top:100%;
+    right:0;
+    left:0;
+    transition:top .4s linear;
+}
+h6{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.bottom_overlay-6:hover .overlay-6{
+    top:85%;
+    cursor:pointer;
+}
+
+/* overlay-6 part end here */
+/* icon part start here */
+.icon{
+    width: 28px;
+    height: 28px;
+    display: block;
+    overflow: hidden;
+    background-color: #e71b24;
+    border-radius: 100%;
+    display: grid;
+    text-decoration: none;
+    padding: 6px;
+    color: white;
+    float: left;
+    margin: 3px;
+    transition: 0.3s;
+}
+.social-icon a:first-child
+{
+    background-color: #3b5998;
+    transition: .80s;
+    opacity: 0;
+}
+.social-icon a:nth-child(2)
+{
+    background-color: #00acee;
+    transition: .60s;
+    opacity: 0;
+}
+
+.social-icon a:nth-child(3)
+{
+    background-color:  #db4a39;
+    transition: .40s;
+    opacity: 0;
+}
+
+.social-icon a:last-child
+{
+    background-color: #0072b1;
+    transition: .20s;
+    opacity: 0;
+}
+.social-icon a:hover
+{
+    background-color: black;
+    color:white;
+    opacity:1;
+}
+.social-icon{
+    text-align:center;
+    place-items: center;
+}
+/* icon part end here */
